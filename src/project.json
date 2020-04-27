@@ -1,0 +1,813 @@
+{
+  "title": "Yool",
+  "version": "2.0.0",
+  "name": "nsxltvmjuiluaup",
+  "roles": {
+    "administrator": {
+      "title": "Administrator",
+      "description": "A role for Administrative Users.",
+      "admin": true,
+      "default": false
+    },
+    "authenticated": {
+      "title": "Authenticated",
+      "description": "A role for Authenticated Users.",
+      "admin": false,
+      "default": false
+    },
+    "anonymous": {
+      "title": "Anonymous",
+      "description": "A role for Anonymous Users.",
+      "admin": false,
+      "default": true
+    }
+  },
+  "forms": {
+    "userLogin": {
+      "title": "User Login",
+      "type": "form",
+      "name": "userLogin",
+      "path": "user/login",
+      "tags": [],
+      "components": [
+        {
+          "type": "email",
+          "persistent": true,
+          "unique": false,
+          "protected": false,
+          "defaultValue": "",
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your email address",
+          "key": "email",
+          "lockKey": true,
+          "label": "Email",
+          "inputType": "email",
+          "tableView": true,
+          "input": true
+        },
+        {
+          "type": "password",
+          "persistent": true,
+          "protected": true,
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your password.",
+          "key": "password",
+          "lockKey": true,
+          "label": "Password",
+          "inputType": "password",
+          "tableView": false,
+          "input": true
+        },
+        {
+          "type": "button",
+          "theme": "primary",
+          "disableOnInvalid": true,
+          "action": "submit",
+          "block": false,
+          "rightIcon": "",
+          "leftIcon": "",
+          "size": "md",
+          "key": "submit",
+          "tableView": false,
+          "label": "Submit",
+          "input": true
+        }
+      ]
+    },
+    "userRegister": {
+      "title": "User Register",
+      "type": "form",
+      "name": "userRegister",
+      "path": "user/register",
+      "tags": [],
+      "components": [
+        {
+          "type": "email",
+          "persistent": true,
+          "unique": false,
+          "protected": false,
+          "defaultValue": "",
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your email address",
+          "key": "email",
+          "lockKey": true,
+          "label": "Email",
+          "inputType": "email",
+          "tableView": true,
+          "input": true
+        },
+        {
+          "type": "password",
+          "persistent": true,
+          "protected": true,
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your password.",
+          "key": "password",
+          "lockKey": true,
+          "label": "Password",
+          "inputType": "password",
+          "tableView": false,
+          "input": true
+        },
+        {
+          "theme": "primary",
+          "disableOnInvalid": true,
+          "action": "submit",
+          "block": false,
+          "rightIcon": "",
+          "leftIcon": "",
+          "size": "md",
+          "key": "submit",
+          "label": "Submit",
+          "input": true,
+          "type": "button"
+        }
+      ]
+    },
+    "adminLogin": {
+      "title": "Admin Login",
+      "type": "form",
+      "name": "adminLogin",
+      "path": "admin/login",
+      "tags": [],
+      "components": [
+        {
+          "type": "email",
+          "persistent": true,
+          "unique": false,
+          "protected": false,
+          "defaultValue": "",
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your email address",
+          "key": "email",
+          "lockKey": true,
+          "label": "Email",
+          "inputType": "email",
+          "tableView": true,
+          "input": true
+        },
+        {
+          "type": "password",
+          "persistent": true,
+          "protected": true,
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your password.",
+          "key": "password",
+          "lockKey": true,
+          "label": "Password",
+          "inputType": "password",
+          "tableView": false,
+          "input": true
+        },
+        {
+          "type": "button",
+          "theme": "primary",
+          "disableOnInvalid": true,
+          "action": "submit",
+          "block": false,
+          "rightIcon": "",
+          "leftIcon": "",
+          "size": "md",
+          "key": "submit",
+          "tableView": false,
+          "label": "Submit",
+          "input": true
+        }
+      ]
+    },
+    "signature": {
+      "title": "Signature",
+      "type": "form",
+      "name": "signature",
+      "path": "signature",
+      "display": "pdf",
+      "tags": [],
+      "settings": {
+        "pdf": {
+          "src": "https://files.form.io/pdf/5ea4b1d64c22c242ed349be1/file/648dc6ef-c0d9-5729-ac53-fbd13dc167d5",
+          "id": "648dc6ef-c0d9-5729-ac53-fbd13dc167d5"
+        }
+      },
+      "components": [
+        {
+          "autofocus": false,
+          "input": true,
+          "tableView": true,
+          "inputType": "text",
+          "inputMask": "",
+          "label": "Print Name",
+          "key": "printName",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "",
+          "multiple": false,
+          "defaultValue": "",
+          "protected": false,
+          "unique": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "spellcheck": true,
+          "validate": {
+            "required": true,
+            "minLength": "",
+            "maxLength": "",
+            "pattern": "",
+            "custom": "",
+            "customPrivate": false
+          },
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "type": "textfield",
+          "id": "d74qin",
+          "overlay": {
+            "top": 245.33299999999997,
+            "left": 324.781,
+            "height": 33,
+            "width": 473,
+            "page": 1
+          },
+          "labelPosition": "top",
+          "inputFormat": "plain",
+          "tags": [],
+          "properties": {}
+        },
+        {
+          "autofocus": false,
+          "input": true,
+          "label": "Submit",
+          "tableView": false,
+          "key": "submit",
+          "size": "md",
+          "leftIcon": "",
+          "rightIcon": "",
+          "block": false,
+          "action": "submit",
+          "disableOnInvalid": false,
+          "theme": "primary",
+          "type": "button"
+        },
+        {
+          "input": true,
+          "tableView": true,
+          "label": "Signature",
+          "key": "signature",
+          "placeholder": "",
+          "footer": "Sign above",
+          "width": "100%",
+          "height": "150px",
+          "penColor": "black",
+          "backgroundColor": "rgb(245,245,235)",
+          "minWidth": "0.5",
+          "maxWidth": "2.5",
+          "protected": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "validate": {
+            "required": false
+          },
+          "type": "signature",
+          "id": "wja6sp",
+          "overlay": {
+            "top": 343.667,
+            "left": 291.781,
+            "height": 51.1146,
+            "width": 474,
+            "page": 1
+          },
+          "hideLabel": true,
+          "tags": [],
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {}
+        }
+      ],
+      "properties": {}
+    },
+    "event": {
+      "title": "Event",
+      "type": "form",
+      "name": "event",
+      "path": "event",
+      "display": "form",
+      "tags": [],
+      "settings": {},
+      "components": [
+        {
+          "autofocus": false,
+          "input": true,
+          "tableView": true,
+          "inputType": "text",
+          "inputMask": "",
+          "label": "Title",
+          "key": "title",
+          "placeholder": "Enter the title for the event",
+          "prefix": "",
+          "suffix": "",
+          "multiple": false,
+          "defaultValue": "",
+          "protected": false,
+          "unique": false,
+          "persistent": true,
+          "hidden": false,
+          "clearOnHide": true,
+          "spellcheck": true,
+          "validate": {
+            "required": false,
+            "minLength": "",
+            "maxLength": "",
+            "pattern": "",
+            "custom": "",
+            "customPrivate": false
+          },
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "type": "textfield",
+          "labelPosition": "top",
+          "inputFormat": "plain",
+          "tags": [],
+          "properties": {}
+        },
+        {
+          "autofocus": false,
+          "input": true,
+          "tableView": true,
+          "label": "Description",
+          "key": "description",
+          "placeholder": "",
+          "prefix": "",
+          "suffix": "",
+          "rows": 3,
+          "multiple": false,
+          "defaultValue": "",
+          "protected": false,
+          "persistent": true,
+          "hidden": false,
+          "wysiwyg": false,
+          "clearOnHide": true,
+          "spellcheck": true,
+          "validate": {
+            "required": false,
+            "minLength": "",
+            "maxLength": "",
+            "pattern": "",
+            "custom": ""
+          },
+          "type": "textarea",
+          "labelPosition": "top",
+          "inputFormat": "plain",
+          "tags": [],
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {}
+        },
+        {
+          "clearOnHide": false,
+          "input": false,
+          "key": "table",
+          "numRows": 1,
+          "numCols": 2,
+          "rows": [
+            [
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "label": "Start Date",
+                    "key": "tableStartDate",
+                    "placeholder": "",
+                    "format": "yyyy-MM-dd hh:mm a",
+                    "enableDate": true,
+                    "enableTime": true,
+                    "defaultDate": "",
+                    "datepickerMode": "day",
+                    "datePicker": {
+                      "showWeeks": true,
+                      "startingDay": 0,
+                      "initDate": "",
+                      "minMode": "day",
+                      "maxMode": "year",
+                      "yearRows": 4,
+                      "yearColumns": 5,
+                      "minDate": null,
+                      "maxDate": null,
+                      "datepickerMode": "day"
+                    },
+                    "timePicker": {
+                      "hourStep": 1,
+                      "minuteStep": 1,
+                      "showMeridian": true,
+                      "readonlyInput": false,
+                      "mousewheel": true,
+                      "arrowkeys": true
+                    },
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "custom": ""
+                    },
+                    "type": "datetime",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {}
+                  }
+                ]
+              },
+              {
+                "components": [
+                  {
+                    "autofocus": false,
+                    "input": true,
+                    "tableView": true,
+                    "label": "End Date",
+                    "key": "tableEndDate",
+                    "placeholder": "",
+                    "format": "yyyy-MM-dd hh:mm a",
+                    "enableDate": true,
+                    "enableTime": true,
+                    "defaultDate": "",
+                    "datepickerMode": "day",
+                    "datePicker": {
+                      "showWeeks": true,
+                      "startingDay": 0,
+                      "initDate": "",
+                      "minMode": "day",
+                      "maxMode": "year",
+                      "yearRows": 4,
+                      "yearColumns": 5,
+                      "minDate": null,
+                      "maxDate": null,
+                      "datepickerMode": "day"
+                    },
+                    "timePicker": {
+                      "hourStep": 1,
+                      "minuteStep": 1,
+                      "showMeridian": true,
+                      "readonlyInput": false,
+                      "mousewheel": true,
+                      "arrowkeys": true
+                    },
+                    "protected": false,
+                    "persistent": true,
+                    "hidden": false,
+                    "clearOnHide": true,
+                    "validate": {
+                      "required": false,
+                      "custom": ""
+                    },
+                    "type": "datetime",
+                    "labelPosition": "top",
+                    "tags": [],
+                    "conditional": {
+                      "show": "",
+                      "when": null,
+                      "eq": ""
+                    },
+                    "properties": {}
+                  }
+                ]
+              }
+            ]
+          ],
+          "header": [],
+          "caption": "",
+          "striped": false,
+          "bordered": false,
+          "hover": false,
+          "condensed": false,
+          "tableView": false,
+          "type": "table",
+          "hideLabel": true,
+          "tags": [],
+          "conditional": {
+            "show": "",
+            "when": null,
+            "eq": ""
+          },
+          "properties": {}
+        },
+        {
+          "autofocus": false,
+          "input": true,
+          "label": "Submit",
+          "tableView": false,
+          "key": "submit",
+          "size": "md",
+          "leftIcon": "",
+          "rightIcon": "",
+          "block": false,
+          "action": "submit",
+          "disableOnInvalid": false,
+          "theme": "primary",
+          "type": "button"
+        }
+      ],
+      "properties": {}
+    }
+  },
+  "actions": {
+    "userLogin:login": {
+      "title": "Login",
+      "name": "login",
+      "form": "userLogin",
+      "settings": {
+        "resources": [
+          "user"
+        ],
+        "username": "email",
+        "password": "password",
+        "allowedAttempts": 5,
+        "attemptWindow": 30,
+        "lockWait": 1800
+      },
+      "priority": 2,
+      "method": [
+        "create"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "admin:role": {
+      "title": "Role Assignment",
+      "name": "role",
+      "form": "admin",
+      "settings": {
+        "association": "new",
+        "type": "add",
+        "role": "administrator"
+      },
+      "priority": 1,
+      "method": [
+        "create"
+      ],
+      "handler": [
+        "after"
+      ]
+    },
+    "admin:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "admin",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "userRegister:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "userRegister",
+      "settings": {
+        "resource": "user",
+        "fields": {
+          "email": "email",
+          "password": "password"
+        }
+      },
+      "priority": 11,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "userRegister:login": {
+      "title": "Login",
+      "name": "login",
+      "form": "userRegister",
+      "settings": {
+        "resources": [
+          "user"
+        ],
+        "username": "email",
+        "password": "password"
+      },
+      "priority": 2,
+      "method": [
+        "create"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "user:role": {
+      "title": "Role Assignment",
+      "name": "role",
+      "form": "user",
+      "settings": {
+        "association": "new",
+        "type": "add",
+        "role": "authenticated"
+      },
+      "priority": 1,
+      "method": [
+        "create"
+      ],
+      "handler": [
+        "after"
+      ]
+    },
+    "user:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "user",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "adminLogin:login": {
+      "title": "Login",
+      "name": "login",
+      "form": "adminLogin",
+      "settings": {
+        "resources": [
+          "admin"
+        ],
+        "username": "email",
+        "password": "password",
+        "allowedAttempts": 5,
+        "attemptWindow": 30,
+        "lockWait": 1800
+      },
+      "priority": 2,
+      "method": [
+        "create"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "signature:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "signature",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    },
+    "event:save": {
+      "title": "Save Submission",
+      "name": "save",
+      "form": "event",
+      "priority": 10,
+      "method": [
+        "create",
+        "update"
+      ],
+      "handler": [
+        "before"
+      ]
+    }
+  },
+  "resources": {
+    "user": {
+      "title": "User",
+      "type": "resource",
+      "name": "user",
+      "path": "user",
+      "tags": [],
+      "components": [
+        {
+          "type": "email",
+          "persistent": true,
+          "unique": false,
+          "protected": false,
+          "defaultValue": "",
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your email address",
+          "key": "email",
+          "label": "Email",
+          "inputType": "email",
+          "tableView": true,
+          "input": true
+        },
+        {
+          "type": "password",
+          "persistent": true,
+          "protected": true,
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your password.",
+          "key": "password",
+          "label": "Password",
+          "inputType": "password",
+          "tableView": false,
+          "input": true
+        },
+        {
+          "type": "button",
+          "theme": "primary",
+          "disableOnInvalid": true,
+          "action": "submit",
+          "block": false,
+          "rightIcon": "",
+          "leftIcon": "",
+          "size": "md",
+          "key": "submit",
+          "tableView": false,
+          "label": "Submit",
+          "input": true
+        }
+      ]
+    },
+    "admin": {
+      "title": "Admin",
+      "type": "resource",
+      "name": "admin",
+      "path": "admin",
+      "tags": [],
+      "components": [
+        {
+          "type": "email",
+          "persistent": true,
+          "unique": false,
+          "protected": false,
+          "defaultValue": "",
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your email address",
+          "key": "email",
+          "label": "Email",
+          "inputType": "email",
+          "tableView": true,
+          "input": true
+        },
+        {
+          "type": "password",
+          "persistent": true,
+          "protected": true,
+          "suffix": "",
+          "prefix": "",
+          "placeholder": "Enter your password.",
+          "key": "password",
+          "label": "Password",
+          "inputType": "password",
+          "tableView": false,
+          "input": true
+        },
+        {
+          "type": "button",
+          "theme": "primary",
+          "disableOnInvalid": true,
+          "action": "submit",
+          "block": false,
+          "rightIcon": "",
+          "leftIcon": "",
+          "size": "md",
+          "key": "submit",
+          "tableView": false,
+          "label": "Submit",
+          "input": true
+        }
+      ]
+    }
+  },
+  "excludeAccess": true
+}
